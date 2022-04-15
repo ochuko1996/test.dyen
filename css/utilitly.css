@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+:root{
+    --yellow: #FFC200;
+    --yellow-light: #FFEDB4;
+    --rose-white: #EAEEFE;
+    --sky-blue: #F7F8FF;
+    --grey-1: #C6C6C6;
+    --grey-2: #868686;
+    --grey-3: #667583;
+    --grey-4: #4A4A4A;
+    --grey-5: #A1A1A1;
+    --black: #212525;
+    /* desktop font size */
+    --header-1: 60px;
+    --header-2: 48px;
+    --header-3: 30px;
+    --header-4: 20px;
+    --header-5: 18px;
+    --header-6: 16px;
+    --desktop-paragraph: 20px;
+    --btn-font-desktop: 16px;
+    /* desktop font size ends*/
+    /* mobile font size ends*/
+    --btn-font-mobile: 12px;
+    --header-1-mobile:40px;
+    --header-2-mobile:30px;
+    --header-3-mobile:25px;
+    --header-4-mobile:18px;
+    --header-5-mobile:13px;
+    --mobile-paragraph: 16px;
+    /* mobile font size ends*/
+    --body-md: 16px;
+    --body-rg: 20px;
+    --transition: all 0.3s;
+
+}
+.sky-blue-bg{
+    background-color: var(--sky-blue);
+}
+.bordered{border: 1px solid black;}
+.height-100{
+    min-height: 100vh;
+}
+.relative{position: relative;}

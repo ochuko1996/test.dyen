@@ -1,0 +1,257 @@
+.section-color{
+    background-color: var(--rose-white);
+    height: fit-content;
+}
+.subcription-input-container{
+    height: 247px;
+    background: linear-gradient(to right, rgb(29, 22, 7) 10%, black 90%);
+    box-shadow: 0.4rem 0.4rem 0.4rem var(--grey-3);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    padding: 10px 10px !important;
+}
+.sub-input{
+    border: 1px solid #F8F8F8;
+    width: 100vw;
+    height: 82px;
+    align-items: center;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 5px 0px;
+}
+#subscribe{
+    background-color: transparent;
+    border: none;
+    height: 69px;
+    width: 80%;
+    outline: none;
+    color: #fff;
+}
+#subscribe::placeholder{
+    padding-left: 0px;
+}
+#subscribe:focus{
+    border: none;
+}
+.subscribe-btn{
+    height: 3rem ;
+    width: 4rem ;
+    border: none;
+    background-color: var(--yellow) !important;
+    border-radius: 5px;
+}
+.subscribe-btn:hover{
+    color: var(--yellow-light);
+}
+.subscribe-btn:active .sub-text{
+    color: black;
+}
+.active{
+    background-color: transparent;
+}
+.sub-icon{
+    color: white;
+    
+}
+.sub-text{
+    display: none;
+}
+.footer-links-item a, .privacy-right a{
+    color: var(--grey-4);
+    text-decoration: none;
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+}
+.footer-icons-item a{
+    color: var(--grey-4);
+    text-decoration: none;
+    display: flex;
+    font-weight: 500;
+    font-size: 32px;
+}
+.footer-links-item a:hover{
+    color: var(--black);
+}
+.privacy-right a:hover{
+    color: var(--black);
+}
+.footer-links-item, .privacy-right{
+    margin-bottom: 34px;
+}
+.footer-bottom{
+    position: relative;
+}
+.hr-divider,.copyright, .privacy-one{
+    display: none;
+}
+.footer-icons{
+    display: flex;
+    position: absolute;
+    bottom: -70%;
+    justify-content: center;
+}
+ .footer-icons-item:not(:last-child){
+    margin-right: 34px;
+}
+a i {
+    transition: all 0.3s linear;
+}
+a:hover i {
+    transform: scale(1.5);
+}
+.insta:hover{
+    background: linear-gradient(90deg, #fdc468 0%, #dd2a7b 100%,#8134af 100%,  #df4996 100%)
+}
+.youtube:hover{
+    background: red;
+}
+.facebook:hover{
+    background-color: #0095f6;
+}
+.copyright{
+    font-size: 12px;
+}
+@media screen and (max-width: 415px){
+    .sub-input{
+        position: relative;
+    }
+    .subscribe-btn{
+        position: absolute;
+        right: 5%; 
+        top: 20%;
+    }
+    
+}
+@media screen and (max-width: 992px){
+    .subcription-input-container h1{
+        color: #fff;
+        text-align: center;
+        padding-top: 1.5rem;
+        word-wrap: break-word;
+        
+    }
+}
+@media screen and (max-width: 994px){
+    .sub-input{
+        position: relative;
+    }
+    .subscribe-btn{
+        position: absolute;
+        right: 5%; 
+        top: 20%;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .section-color{
+        background-color: var(--rose-white);
+        /* height: 80vh; */
+        padding: 108px 0 65px;
+    }
+	.subcription-input-container{
+        height: 265px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 30px;
+        padding: 76px 81px !important;
+        display: flex;
+        justify-content: space-between;
+    }
+    .subcription-input-container h1{
+        color: #fff;
+        text-align: left;
+        word-spacing: 12px;
+        align-items: center;
+        letter-spacing: 2px;
+        
+    }
+    .sub-input{
+        border: 1px solid #F8F8F8;
+        width: 550px;
+        height: 82px;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+    }
+    #subscribe{
+        background-color: transparent;
+        border: none;
+        height: 69px;
+        color: #fff;
+        padding-left: 30px;
+        outline: none;
+    }
+    #subscribe::placeholder{
+        padding-left: 30px;
+        
+    }
+    #subscribe:focus{
+        border: 0;
+    }
+    .subscribe-btn{
+        height: 4rem;
+        width: 8rem;
+        border: none;
+        background-color: var(--yellow);
+        border-radius: 5px;
+    }
+    .sub-icon{
+        display: none;
+    }
+    .sub-text{
+        display: inline-block;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    .footer-links{
+        display: flex;
+        
+    }
+    .footer-links-item, .privacy-right{
+        margin-bottom:-20px;
+    }
+    .footer-links-item:not(:last-child), .privacy-right:not(:last-child){
+        margin-right: 34px;
+    }
+    
+    .footer-icons-item:not(:last-child){
+        margin-right: 28px;
+    }
+    .footer-bottom{
+        margin-bottom: 45.44px;
+    }
+    .privacy{
+        display: flex;
+    }
+    
+    .footer-bottom{
+        position: relative;
+    }
+    .hr-divider,.copyright, .privacy-one{
+        display: block;
+    }
+    .footer-icons{
+        display: flex;
+        position: static;
+        justify-content: left;
+    }
+    .footer-icons-item > a > i{
+        color: var(--grey-4);
+        text-decoration: none;
+        display: flex;
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .footer-links-item a, .footer-icons-item a, .privacy-right a{
+        color: var(--grey-4);
+        text-decoration: none;
+        display: flex;
+        font-size: 13px !important;
+        font-weight: 500;
+    }
+    
+
+
+}

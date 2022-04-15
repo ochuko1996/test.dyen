@@ -1,0 +1,141 @@
+@import url(./style.css);
+@import url(./utilitly.css);
+/* .bg-white{
+    background-color: #fff;
+
+} */
+
+.btn-yellow{
+    background-color: var(--yellow);
+}
+.hero-header, .hero-header ~ p{
+    color: #fff;
+}
+.hero-header ~ p{
+    width: calc(100%);
+}
+.search-contain input{
+    background-color: var(--rose-white);
+}
+.program-hero{
+    background-image: url(../assets/images/png/Group\ 330.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 95vh;
+    margin-top: 60px;
+}
+
+.discover-header-text h1{
+    font-size: var(--header-1-mobile);
+    margin-top: 141px;
+    /* margin-top: 200px; */
+    font-weight: 800;
+    line-height: 50px;
+    text-align: center;
+}
+.discover-header-text h1 ~ p{
+    font-size: var(--mobile-paragraph);
+    text-align: center!important; 
+    margin: 20px 0;
+    /* width: calc(100%); */
+}
+.hero-header ~ .hero-btns{
+    justify-content: center;
+}
+.course-duration{
+    margin: 15px 0 20px !important;
+}
+.hero-btns{
+    justify-content: left;
+}
+.program-poster-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.program-poster{
+    border-radius: 20px;
+    position: relative;
+    /* margin: 0 auto; */
+    width: 340px;
+}
+.program-poster img{
+    border-radius: 20px;
+    width: 100%;
+}
+.program-poster::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: block;
+    background-image: url(../assets/images/png/Group\ 275.png);
+    position: absolute;
+    top: -40px;
+    /* right: px; */
+    left: 40px;
+    z-index: -1;
+} 
+.program-reverse{
+    flex-direction: row-reverse;
+}  
+/* sm */
+@media screen and (min-width: 576px){
+
+}
+/* md */
+@media screen and (min-width: 768px){
+
+}
+/* lg */
+@media screen and (min-width: 992px){
+    .hero-header{
+        margin-top: 200px;
+    }
+    .program-hero{
+        margin-top: 80px;
+        min-height: 90vh;
+        
+    }
+    /* discover section */
+    .discover-header-text h1{
+        font-size: var(--header-1);
+        margin-top: 141px;
+    }
+    .discover-header-text h1 ~ p{
+        font-size: var(--desktop-paragraph);
+        text-align: center!important; 
+        margin: 20px 0;
+        width: calc(100% - 50px);
+    }
+    .all-program{
+        text-align: left;
+    }
+    .course-duration{
+        margin: 23px 0 29px !important;
+    }
+    
+    .program-poster-wrapper{
+        display: flex;
+        justify-content: start;
+        margin-top: 0px;
+    }
+    .program-poster{
+        border-radius: 20px;
+        position: relative;
+        /* margin: 0 auto; */
+        width: 350px;
+    }
+    .hero-header ~ .hero-btns{
+        justify-content: left;
+    }
+    /* discover section ends */
+}
+/* xl */
+@media screen and (min-width: 1200px){
+
+}
+/* xxl */
+@media screen and (min-width: 1400px){
+
+}

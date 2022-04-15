@@ -1,0 +1,338 @@
+.nav-header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--sky-blue);
+}
+.program-hero{
+    background: linear-gradient(70deg, black, var(--black) );
+    background-size: cover;
+    background-position: center;
+    min-height: 95vh;
+    margin-top: 60px;
+}
+.overview-container{
+    height: 111px;
+}
+.overview{
+    padding: 45px 0;
+}
+.overview-analysis{
+    margin: 30px 0px;
+    border-bottom: 1px solid var(--grey-1);
+    border-top: 1px  solid var(--grey-1);
+    padding: 35.1px 0;
+}
+.overview-header{
+    margin: 80px 0 30px;
+}
+.overview-analysis h5{
+    line-height: 42.67px;
+    font-size: 16px;
+}
+.overview-analysis p{
+    line-height: 42.67px !important;
+    font-size: 12px;
+}
+
+
+
+.overview-analysis .col-4,.overview-analysis .col-lg-4{
+    padding: 0;
+}
+.rating{
+    color: var(--yellow);
+}
+.grey{
+    color: var(--grey-4);
+}
+.certified h5{
+   margin: 30px 0; 
+}
+.previous-learner{
+    height: 387px;
+    border-radius: 20px;
+    margin-top: 37px;
+}
+.previous-learner-text{
+    margin-bottom: 30px;
+}
+.previous-learner video{
+    height: 90%;
+    border-radius: 20px;
+}
+.previous-learner  poster{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.btn-start{
+    height: 68px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--yellow);
+    font-weight: bold;
+    margin-top: 15px;
+}
+.curriculum{
+    padding: 40px 20px;
+    border-radius: 20px;
+    min-height: 210px;
+    margin-bottom: 36px;
+}
+.curriculum div:not(:last-child){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.curriculum h5{
+    margin-bottom: 20px;
+}
+.program-curriculum h3{
+    margin-bottom: 70px;
+}
+.curriculum-cta{
+    display: flex;
+    /* justify-content: right; */
+    align-items: center;
+}
+.btn-curriculum{
+    height: 61.398895263671875px;
+    width: 234.928955078125px;
+    border-radius: 11.584698677062988px;
+    background-color: transparent;
+    margin-top: 20px;
+}
+.btn-curriculum:hover{
+    background-color: var(--yellow);
+    transition: var(--transition);
+    border: none;
+}
+.height-100{
+    min-height: 100vh;
+}
+.student-review{
+    padding: 57.53px 0 ;
+}
+.card-avatar{
+    width: 111px;
+    height: 111px;
+    border-radius: 50%;
+
+}
+
+.card-avatar img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.student-review h3{
+    /* margin-top: 57.53px !important; */
+    margin-bottom: 57.53px !important;
+}
+.student-review-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 410.81072998046875px;
+    /* width: 295px; */
+    border-radius: 14.209115982055664px;
+    padding: 25px 19px 25px 19px;
+    color: var(--grey-5);
+    border: 1px solid var(--grey-5);
+    transition: all 0.8s;
+
+}
+.review-social-icon,.student-fullname,.student-review{
+    margin-top: 20px;
+}
+.review-social-icon span:not(:last-child){
+    margin-right: 57px;
+}
+.student-review-card:hover {
+    color: #fff;
+    border: none;
+    background-color: var(--black);
+}
+.student-review-card:hover .card-avatar{
+    border: 2px solid var(--yellow);
+    padding: 5px;
+}
+.student-review-card:hover .student-rating{
+    color: var(--yellow);
+}
+.student-row > div{
+    margin-bottom: 20px;
+}
+.overview-analysis h5{
+    line-height: 42.67px;
+    font-size: 18px;
+}
+
+.discover-program-text{
+    text-align: left;
+}
+.overview-analysis p{
+    line-height: 42.67px !important;
+    font-size: var(12px);
+}
+.overview a{
+    text-decoration: none;
+    color: var(--black);
+}
+.overview .overview-content:not(:last-child){
+    margin-right: 60px;
+
+}
+.student-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.mid-line{
+   position: absolute; 
+   border: 0.2px solid var(--grey-1);
+   top: 50%;
+   width: 100%;
+   z-index: -1;
+}
+.student-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+.title {
+    margin-top: 15vh;
+    margin-bottom: 4rem;
+  }
+  .title h2 {
+    color: var(--clr-gold);
+    font-family: "Great Vibes", cursive;
+    text-align: center;
+  }
+  .section-center {
+    max-width: var(--fixed-width);
+  }
+  .question {
+    background: var(--clr-white);
+    border-radius: var(--radius);
+    box-shadow: var(--light-shadow);
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .question-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    padding-bottom: 1rem;
+  }
+  
+  .question-title p {
+    margin-bottom: 0;
+    letter-spacing: var(--spacing);
+    color: var(--clr-grey-1);
+  }
+  .question-btn {
+    font-size: 1.5rem;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    color: var(--clr-gold);
+    transition: var(--transition);
+  }
+  .question-btn:hover {
+    transform: rotate(90deg);
+  }
+  .question-text {
+    padding: 1rem 0 1.5rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .question-text p {
+    margin-bottom: 0;
+  }
+  /* hide text */
+  .question-text {
+    display: none;
+  }
+  .show-text .question-text {
+    display: block;
+  }
+  .minus-icon {
+    display: none;
+  }
+  .show-text .minus-icon {
+    display: inline;
+  }
+  .show-text .plus-icon {
+    display: none;
+  }
+  
+@media screen and (min-width: 576px){
+
+}
+/* md */
+@media screen and (min-width: 768px){
+    .student-review-card{
+        width: 200% !important;
+    }
+
+}
+/* lg */
+@media screen and (min-width: 992px){
+    .curriculum-cta{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+    .btn-curriculum{
+        margin: 0;
+    }
+    .curriculum{
+        padding: 40px 73px
+    }
+    .student-review-card{
+        width: 295px !important;
+        /* min-height: 410.81072998046875px; */
+    }
+    .student-row > .student-row .col-12,.student-row .col-md-6, .student-row .col-lg-4{
+        width: fit-content;
+    }
+    .student-row{
+        justify-content: space-between;
+    }
+    .student-row > div{
+        margin-bottom: 0px;
+    }
+    .overview-analysis h5{
+        font-size: 18px;
+    }
+    .overview-analysis p{
+        font-size: var(--desktop-paragraph);
+    }
+    .card{
+        width: 298px;
+        border: none;
+    }
+    .program-poster{
+        width: 100%;
+    }
+    .programs .col-12, .programs .col-md-6{
+        width: 298px;
+        margin-right: 35px;
+    }
+    .overview .overview-content:not(:last-child){
+        margin-right: 77px;
+    
+    }
+}
+/* xl */
+@media screen and (min-width: 1200px){
+
+}
+/* xxl */
+@media screen and (min-width: 1400px){
+
+}
