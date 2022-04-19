@@ -9,15 +9,16 @@
     --grey-3: #667583;
     --grey-4: #4A4A4A;
     --grey-5: #A1A1A1;
+    --grey-6: #FCFCFC;
     --black: #212525;
     /* desktop font size */
     --header-1: 60px;
-    --header-2: 48px;
+    --header-2: 45px;
     --header-3: 30px;
     --header-4: 20px;
     --header-5: 18px;
     --header-6: 16px;
-    --desktop-paragraph: 20px;
+    --desktop-paragraph: 16px;
     --btn-font-desktop: 16px;
     /* desktop font size ends*/
     /* mobile font size ends*/
@@ -32,6 +33,7 @@
     --body-md: 16px;
     --body-rg: 20px;
     --transition: all 0.3s;
+    --btn-shadow: 4px 4px 28px rgba(255, 194, 0, 0.5);
 
 }
 .sky-blue-bg{

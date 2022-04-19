@@ -5,6 +5,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* outline: 1px solid red; */
 }
 h1,
 h2,
@@ -18,9 +19,6 @@ body{
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-p{
-    font-weight: 200;
-}
 :root{
     --shadow: 0px 0px 6px 4px rgba(219, 218, 218, 0.445);
     --light-shadow: 0px 0px 6px 4px rgba(219, 218, 218, 0.308);
@@ -30,14 +28,30 @@ nav{
     position: fixed;
     width: 100%;
     /* border: 1px solid red; */
-    z-index: 1000;
+    z-index: 500;
     box-shadow: var(--shadow);
     top: 0;
+}
+.header-gradient{
+    background: linear-gradient(90deg,#ffc4002a, #F7F8FF, #F7F8FF);
+}
+.wave{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
+} 
+.wave img{
+    width: 100%;
+}
+.glass{
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter:blur(8px) ;
 }
 .nav-header{
     display: flex;
     justify-content: space-between;
-    background-color: var(--sky-blue);
+    /* background-color: #fff; */
 }
 .nav-center{ 
     display: flex;
@@ -64,6 +78,15 @@ nav{
     position: relative;
     width: fit-content;
 }
+.program-menu ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+.program-menu ul li{
+    height: 58px;
+}
+
 .search-icon{
     position: absolute;
     top: 15px;
@@ -88,7 +111,9 @@ nav{
 .hamburger,.cancel-btn,.nav-icons:hover{
     cursor: pointer;
 }
-
+/* .item p{
+    font-weight: 400;
+} */
 .cancel-btn{
     /* position: relative; */
     display: flex;
@@ -99,6 +124,9 @@ nav{
 .fa-times,.fa-bars,.fa-cart-plus{
     font-size: 1.5rem;
 }
+.program-menu-items,.fa-down,.fa-up{
+    display: none;
+}
 .show-links{
     transform: translateX(0);
 }
@@ -108,14 +136,18 @@ nav{
     font-size: 1.5rem;
     text-transform: capitalize;
     font-weight: 600;
+    transition: var(--transition);
     
 }
-.nav-item a:hover{
-    color: var(--textYellow);
-}
+/* .nav-item a:hover{
+    color: var(--yellow);
+} */
 .nav-links .nav-item, .search-contain{
     margin-bottom: 61px;
 }
+/* .nav-links div:nth-child(2){
+    margin-bottom: 0;
+} */
 .nav-icons{display: none;}
 /* nav-menu ends */
 /* hero-section */
@@ -139,30 +171,34 @@ nav{
 .hero-btns button:not(:last-child){
     margin-right: 5px;
     background-color: var(--yellow);
-    border-radius: 11.584698677062988px;
 }
 .hero-poster{
     margin-top: 80px;
-    height: 90vh;
+    height: 92vh;
     display: none;
 }
 .hero-poster img{
     height: 100%;
 }
 .btn{
+    border-radius: 11.584698677062988px;
     width: 146px;
     height: 48.67px;
     font-size: var(--btn-font-mobile);
 }
+.filter-btn{
+    display: flex;
+    align-items: center;
+}
 /* hero-section ends */
 /* discover-section */
 .discover-header{
-    position: absolute;
-    top: -170px;
+    /* position: absolute; */
+    /* top: -170px; */
     border-radius: 5.8px;
-    height: 125px;
-    width: 90%;
-    left: 8%;
+    height: 130px;
+    /* width: 90%; */
+    /* left: 8%; */
     background-color: #fff;
 }
 .discover-heading{
@@ -170,6 +206,8 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 0px 52.6301px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
 }
 .discover-heading h5,.discover-heading P{
     display: none;
@@ -183,7 +221,7 @@ nav{
     /* box-shadow: var(--light-shadow); */
 }
 .photograpy-header{
-    font-size: 18px;
+    font-size: 16px;
 }
 .course-title{
     margin: 10.75px 0 14px;
@@ -229,8 +267,14 @@ nav{
 .card{
     border: none;
 }
+.programs{
+    cursor: pointer;
+}
+.programs.active{
+    cursor: grab;
+}
 .course-duration{
-    margin-top: 20px;
+    margin: 20px 0 14px;
 }
 .course-duration:nth-child(3){
     margin-top: 0px;
@@ -257,7 +301,10 @@ nav{
 }
 /* discover-section ends */
 /* our values */
-.our-values-text h6,.our-vision-text h6,.help-text h6{
+.our-values>.container .row>div:first-child,.our-values{
+    margin-bottom: 100px;
+}
+.our-values-text h6,.our-vision-text h6,.help-text h6, .dyen-archivement-text h2, .our-vision-header h6{
     color: var(--yellow);
 }
 .our-values-text h3,.our-vision-text h3, .help-text h3{
@@ -270,8 +317,11 @@ nav{
 
 }
 .our-values-text{
+    /* margin-top: 100px; */
     text-align: center;
-    margin-top: 100px;
+}
+.center{
+    text-align: center;
 }
 .values{
     display: flex;
@@ -284,9 +334,12 @@ nav{
     margin-right: 10px;
 }
 .explore-btn{
-    font-weight: bold;
+    /* font-weight: bold; */
     margin-top: 40px;
     background-color: var(--yellow);
+}
+.btn-shadow{
+    box-shadow: var(--btn-shadow);
 }
 /* our values ends */
 /* our vision */
@@ -294,7 +347,10 @@ nav{
     margin-top: 100px;
 }
 .our-vision-text{
-    margin-top: 40px;
+    margin: 40px auto;
+
+    text-align: center;
+    /* width: 80%; */
 }
 .our-vision-text p{
     font-size: var(--mobile-paragraph);
@@ -316,19 +372,23 @@ nav{
     justify-content: center
 }
 .overlay-play{
+    display: flex;
     position: absolute;
     border-radius: 20px;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, .6);
 }
+.overlay-play img{
+    cursor: pointer;
+}
 .video-review video{
     height: 100%;
     border-radius: 20px;
-    width: 80%;
+    width: 100%;
 }
 .slider{
-    margin: -90px auto 0;
+    margin: -150px auto 0;
     overflow: hidden;
     min-height: 615px;
     color: #fff;
@@ -407,7 +467,19 @@ nav{
     /* transform: translateX(-300%); */
 }
 /* testimonial ends */
-
+/* dyen-archivement */
+.dyen-archivement{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url(../assets/images/png/DSC_9989\ 1.png) ;
+    background-position: top;
+    background-size: cover;
+    height: 500px;
+    margin: -100px 0 0;
+    padding: 200px 0;
+}
+.dyen-archivement-text h6{
+    font-size: var(--header-2-mobile);
+}
+/* dyen-archivement ends */
 /* our help */
 .help-pad{
     padding: 103px 0 103px;
@@ -455,6 +527,7 @@ nav{
 
 /* our help ends */
 
+
 /* sm */
 @media screen and (min-width: 576px){
 
@@ -471,9 +544,54 @@ nav{
     .hamburger,
     .cancel-btn,
     .discover-heading span,
-    .nav-links .home{
+    .nav-links .home, .fa-up{
         display: none;
     }
+    .fa-down{
+        display: inline;
+    }
+    .program-menu:hover .fa-down{
+        display: none;
+        
+    }
+    .nav-item a:hover{
+        color: var(--yellow);
+    }
+    .program-menu:hover .fa-up{
+        display: inline;
+    }
+    .dropDown-parent{
+        position: absolute;
+        top: 0px;
+        border: 1px solid black;
+        height: fit-content;
+        transform: translateY(-140%);
+        opacity: 0;
+        transition: 1s;
+        z-index: -100;
+        padding-top:50px ;
+    }
+    .program-menu:hover .dropDown-parent{
+        opacity: 1;
+        transform: translateY(0%);
+        /* top: 32px; */
+    }
+    .program-menu-items{
+        height: 178px;
+        width: 229px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 63px 0px #0000001A;
+        padding: 15px !important;
+        /* top: -100%; */
+        display: block  ;
+    }
+    
+    /* nav{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        background-color: black;
+    } */
     .nav-links .nav-item, .search-contain{
         margin-bottom:0px;
     }
@@ -485,10 +603,9 @@ nav{
         position: static;
         height: fit-content;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         transform: none;
         transition: none;
-        min-height: fit-content;
     }
     .transform{
         text-align: left;
@@ -498,22 +615,24 @@ nav{
         /* width: 20vw; */
         height: fit-content;
         align-items: center;
-        margin-left: 123px;
+        /* margin-left: 123px; */
     }
     .nav-left{
         padding: 0;
     }
-    /* .nav-links .nav-item:not(:last-child){
-        margin-right: 34px;
-    } */
-    .nav-links .nav-item{
+    .nav-links .nav-item:not(:last-child){
         margin-right: 34px;
     }
     .nav-item a{    
-        font-size: 1rem;
-        font-weight: none;
+        text-decoration: none;
+        color: var(--black);
+        font-size: 18px;
+        text-transform: capitalize;
+        font-weight: 400;
+            
+        }
         
-    }
+
     .search-contain input{
         /* background-color: var(--rose-white); */
         width: 538px;
@@ -530,9 +649,6 @@ nav{
     .search-contain{
         border-radius: 20px;
         padding: 5px;
-    }
-    .nav-item a{    
-        color: var(--grey-1);
     }
     .nav-header{
         height: 80px;
@@ -576,7 +692,8 @@ nav{
         font-size: var(--btn-font-desktop);
     }
     .hero-poster{
-        display: flex;
+       display: flex; 
+
     }
     /* hero ends */
     /* discover program start */
@@ -595,8 +712,8 @@ nav{
     .discover-heading{
         flex-direction: row;
         padding: 10px;
-        box-shadow: var(--light-shadow);
         height: 135px;
+        /* box-shadow: var(--light-shadow); */
     }
     .discover-heading h5,.discover-heading P{
         display: block;
@@ -642,9 +759,7 @@ nav{
         right: -5%;
     }
     .card{
-        width: 298px;
-        /* min-height: 491px; */
-        /* box-shadow: var(--light-shadow); */
+        width: 279.65px;
         border: none;
     }
     .course-duration{
@@ -675,16 +790,21 @@ nav{
     }
     /* discover program ends */
     /* our values */
-    .our-values-text h6,.our-vision-text h6,.help-text h6{
+    .our-values-text h6,
+    .our-vision-text h6, 
+    .our-vision-header h6,
+    .help-text h6{
         color: var(--yellow);
     }
-    .our-values-text h3,.our-vision-text h3, .help-text h3{
+    .our-values-text h3,
+    .our-vision-text h3, 
+    .help-text h3{
         font-size: var(--header-3);
         font-weight: 700;
         line-height: 51px;
         letter-spacing: 0em;
         margin: 15px 0 25px;
-        width: calc(100% - 150px);
+        /* width: calc(100% - 150px); */
 
     }
     .our-values-text{
@@ -708,7 +828,8 @@ nav{
     /* our values ends */
     /* our vision */
     .our-vision-text{
-        margin-top: 40px;
+        /* margin-top: 40px; */
+        width: 60%;
     }
     .our-vision-text p{
         font-size: var(--desktop-paragraph);
@@ -784,9 +905,10 @@ nav{
 }
 /* xl */
 @media screen and (min-width: 1200px){
+    
 
 }
 /* xxl */
 @media screen and (min-width: 1400px){
-
+   
 }
