@@ -83,8 +83,9 @@ nav{
     padding: 0;
     margin-top: 20px;
 }
-.program-menu ul li{
+.program-menu ul li:not(:first-child){
     height: 58px;
+    border-top: 1px solid black ;
 }
 
 .search-icon{
@@ -563,13 +564,13 @@ nav{
     .dropDown-parent{
         position: absolute;
         top: 0px;
-        border: 1px solid black;
+        /* border: 1px solid black; */
         height: fit-content;
         transform: translateY(-140%);
         opacity: 0;
         transition: 1s;
         z-index: -100;
-        padding-top:50px ;
+        padding-top:20px !important;
     }
     .program-menu:hover .dropDown-parent{
         opacity: 1;
