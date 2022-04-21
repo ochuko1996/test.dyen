@@ -1,5 +1,4 @@
-// import { programs } from "./programs.js"
-const hamburger = document.querySelector(".hamburger")
+let hamburger = document.querySelector(".hamburger")
 const navLeft =  document.querySelector(".nav-left")
 const cancelBtn =  document.querySelector(".cancel-btn")
 
@@ -69,14 +68,23 @@ const programsDiv = document.querySelector('.programs')
 //     programsDiv.appendChild(programDisplay)
 // })
 
-const navigateBtn = document.querySelectorAll('.navigation')
-const item = programsDiv.getElementsByClassName('item')
-navigateBtn.forEach(btn=>{
-    btn.addEventListener('click',()=>{
-        if(btn.classList.contains('next-btn')){
-            programsDiv.append(item[0])
-        } else if(btn.classList.contains('prev-btn')){
-            programsDiv.prepend(item[item.length - 1])
-        }
-    })
+
+const playBtn = document.getElementById('playBtn')
+const vid = document.querySelector('.vid')
+const overlay = document.querySelector('.overlay-play')
+
+playBtn.addEventListener('click',()=>{
+    vid.play()
+    if(vid.play()){
+        overlay.classList.add('d-none')
+        vid.setAttribute("controls", "controls")
+        
+        // console.log("hi");
+        // attributeFunc()
+    }
+})
+
+vid.addEventListener('ended',(e)=>{
+    vid.removeAttribute("controls")
+    overlay.classList.remove('d-none')
 })
