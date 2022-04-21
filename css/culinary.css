@@ -1,14 +1,25 @@
 .nav-header{
     display: flex;
     justify-content: space-between;
-    background-color: var(--sky-blue);
+    /* background-color: var(--sky-blue); */
+}
+.hero-header{
+    margin: 236px 0 0;;
+}
+
+.explore-btn{
+    margin: 0;
+} 
+.hero-header,.hero-header ~ p{
+    color: #fff;
+    
 }
 .program-hero{
     background: linear-gradient(70deg, black, var(--black) );
     background-size: cover;
     background-position: center;
-    min-height: 95vh;
-    margin-top: 60px;
+    min-height: 100vh;
+    /* margin-top: 60px; */
 }
 .overview-container{
     height: 111px;
@@ -28,12 +39,12 @@
 .overview-analysis h5{
     line-height: 42.67px;
     font-size: 16px;
+    font-weight: 700;
 }
 .overview-analysis p{
     line-height: 42.67px !important;
     font-size: 12px;
 }
-
 
 
 .overview-analysis .col-4,.overview-analysis .col-lg-4{
@@ -44,27 +55,35 @@
 }
 .grey{
     color: var(--grey-4);
+    /* font-weight: 200!important; */
 }
 .certified h5{
    margin: 30px 0; 
 }
 .previous-learner{
-    height: 387px;
+    min-height: 387px;
     border-radius: 20px;
     margin-top: 37px;
 }
-.previous-learner-text{
+/* .previous-learner-text{
     margin-bottom: 30px;
-}
+} */
 .previous-learner video{
-    height: 90%;
+    height: 100%;
     border-radius: 20px;
 }
-.previous-learner  poster{
-    width: 100%;
-    border-radius: 20px;
+.student-gallery{
+    margin-top: 30px;
 }
-
+.video-container{
+    height: 387px;
+}
+.video-container video{
+    height: 100%;
+}
+.learners-video-text{
+    margin: 30px 0;
+}
 .btn-start{
     height: 68px;
     border: none;
@@ -172,9 +191,9 @@
 .discover-program-text{
     text-align: left;
 }
-.overview-analysis p{
-    line-height: 42.67px !important;
-    font-size: var(12px);
+.student-review-card p{
+    font-size: 16px;
+    font-weight: 200;
 }
 .overview a{
     text-decoration: none;
@@ -190,13 +209,7 @@
     border-radius: 50%;
 }
 
-.mid-line{
-   position: absolute; 
-   border: 0.2px solid var(--grey-1);
-   top: 50%;
-   width: 100%;
-   z-index: -1;
-}
+
 .student-img img{
     width: 100%;
     height: 100%;
@@ -269,19 +282,23 @@
   .show-text .plus-icon {
     display: none;
   }
-  
+  .trained{
+      margin-top: 50px;
+  }
+  /* sm */
 @media screen and (min-width: 576px){
 
 }
 /* md */
 @media screen and (min-width: 768px){
     .student-review-card{
-        width: 200% !important;
+        width: 100% !important;
     }
 
 }
 /* lg */
 @media screen and (min-width: 992px){
+    
     .curriculum-cta{
         display: flex;
         justify-content: right;
@@ -310,7 +327,8 @@
         font-size: 18px;
     }
     .overview-analysis p{
-        font-size: var(--desktop-paragraph);
+        font-size: 16px;
+        /* font-size: 400; */
     }
     .card{
         width: 298px;

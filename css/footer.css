@@ -224,7 +224,7 @@ a:hover i {
         /* font-weight: bold; */
         letter-spacing: 2px;
     }
-    .footer-links{
+    .footer-links,.privacy{
         display: flex;
         
     }
@@ -237,10 +237,6 @@ a:hover i {
     .footer-bottom{
         margin-bottom: 45.44px;
     }
-    .privacy{
-        display: flex;
-    }
-    
     .footer-bottom{
         position: relative;
     }

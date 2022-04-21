@@ -7,8 +7,9 @@
     <title>Dyen</title>
     <!-- css link -->
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/program.css">
+    <!-- <link rel="stylesheet" href="./css/program.css"> -->
     <link rel="stylesheet" href="./css/culinary.css">
+    <link rel="stylesheet" href="./css/web.css">
      <!-- font-awesome link -->
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
@@ -16,44 +17,77 @@
     <!-- header-section -->
     <header>
         <!-- nav-menu-section -->
-      <nav class="glass">
-          <div class="container">
-              <div class="nav-header ">
-                  <div class="nav-center ">
-                      <div class="nav-brand">
-                          <a href="./index.html">
-                              <img src="./assets/images/png/logo.png" alt="nav-brand">
-                          </a>
-                      </div>
-                      <div class="hamburger">
-                          <i class="fa fa-bars"></i>
-                      </div>
-                  </div>
-                  <div class="nav-left">
-                      <div class="cancel-btn">
-                          <i class="fa fa-times"></i>
-                      </div>
-                      <div class="search-contain ">
-                          <input type="search" name="search" id="search" placeholder="Search for courses">
-                          <span class="search-icon"><i class="fas fa-search"></i></span>
-  
-                      </div>
-                      <div class="nav-links ">
-                          <div class="nav-item home"><a href="./index.html">home</a></div>
-                          <div class="nav-item"><a href="#">about</a></div>
-                          <div class="nav-item"><a href="#">program</a></div>
-                          <div class="nav-item"><a href="#">store</a></div>
-                          <!-- <div class="nav-icons nav-item">
-                              <div class="cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></div>
-                             
-                          </div> -->
-                      </div>
-
-                  </div>
-
-              </div>
-          </div>
-      </nav>
+        <nav class="glass">
+            <div class="container">
+                <div class="nav-header">
+                    <div class="nav-center ">
+                        <div class="nav-brand">
+                            <a href="./index.html">
+                                <img src="./assets/images/png/logo.png" alt="nav-brand">
+                            </a>
+                        </div>
+                        <div class="hamburger">
+                            <i class="fa fa-bars"></i>
+                        </div>
+                    </div>
+                    <div class="nav-left">
+                        <div class="cancel-btn">
+                            <i class="fa fa-times"></i>
+                        </div>
+                        <div class="search-contain ">
+                            <input type="search" name="search" id="search" placeholder="Search for courses">
+                            <span class="search-icon"><i class="fas fa-search"></i></span>
+    
+                        </div>
+                        <div class="nav-links ">
+                            <div class="nav-item home">
+                                <a href="./index.html">
+                                    home
+                                </a>
+                            </div>
+                            <div class="nav-item program-menu relative">
+                                <a href="./program.html" class="drop-program">
+                                program 
+                                <span class="fa-down">
+                                    <i class="fa fa-caret-down"></i>
+                                </span>
+                                <span class="fa-up">
+                                    <i class="fa fa-caret-up"></i>
+                                </span>
+                                </a>
+                                <ul class="dropDown-parent">
+                                    <ul class="program-menu-items glass">
+                                        <li class="program-item ">
+                                            <span class="prog-icon">
+                                                <img src="./assets/images/png/Group 378.png" alt="">
+                                            </span>
+                                                Dyen Tech
+                                        </li>
+                                        <li class="program-item">
+                                            <span class="prog-icon">
+                                                <img src="./assets/images/png/Group 378 (1).png" alt="">
+                                            </span>
+                                                Dyen Media
+                                        </li>
+                                        <li class="program-item">
+                                            <span class="prog-icon">
+                                                <img src="./assets/images/png/Group 378 (2).png" alt="">
+                                            </span>
+                                                Dyen Culinary
+                                        </li>
+                                    </ul>
+                                </ul>
+                            </div>
+                            <div class="nav-item"><a href="#">Community</a></div>
+                            <div class="nav-item"><a href="#">about</a></div>
+                            <div class="nav-item"><a href="https://dyen.store">store</a></div>
+                        </div>
+    
+                    </div>
+    
+                </div>
+            </div>
+        </nav>
       <!-- nav-menu-section ends -->
       <div class="program-hero">
           <div class="container">
@@ -66,9 +100,12 @@
                         The Ultimate Frontend Programming Course Taught by industry experts
                       </p>
                         <div class="hero-btns">
-                            <button class="btn btn-yellow">
+                            <button class="btn explore-btn btn-shadow">
                                 Start Now
                             </button>
+                        </div>
+                        <div class="trained">
+                            <img src="./assets/images/png/Group 308.png" alt="trained">
                         </div>
                   </div>
                   <div class="col-12 col-lg-6">
@@ -197,9 +234,14 @@
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="previous-learner">
-                        <video width="100%" src="./assets/videos/242251781_1246014242530912_3561210133606402230_n.mp4" controls muted poster="./assets/images/png/DSC_9972 2.png">
-
-                        </video>
+                        <div class="video-container relative">
+                            <video class="vid" width="100%" src="./assets/videos/242251781_1246014242530912_3561210133606402230_n.mp4" controls muted >
+    
+                            </video>
+                            <div class="overlay-play justify-content-center align-items-center">
+                                <img id="playBtn" src="./assets/images/png/playbtn.png" alt="playbtn">
+                            </div>
+                        </div>
                         <div class="learners-video-text">
                             <h5>
                                 A message from previous learners.
@@ -207,8 +249,8 @@
                         </div>
                     </div>
                     <div class="student-gallery ">
-                        <div class="first-gallery d-flex justify-content-between relative">
-                            <div class="mid-line"></div>
+                        
+                        <div class="first-gallery d-flex justify-content-between">
                             <div class="student-img">
                                 <img src="./assets/images/png/DSC_9972 2.png" alt="">
                             </div>
@@ -655,5 +697,6 @@
      <!-- footer-section ends-->
      <script src="./js/app.js"></script>
      <script src="./js/culinaryReview.js"></script>
+     <script src="./js/navigation.js"></script>
 </body>
 </html>

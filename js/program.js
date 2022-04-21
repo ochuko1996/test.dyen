@@ -4,7 +4,8 @@ const programs = [
         courseTitle: "Culinary",
         courseDescription: "Learn cooking, baking and drink making from experts",
         courseDuration: "Duration: 4months",
-        category: "culinary"
+        category: "culinary",
+       
     },
     {
         poster: "./assets/images/png/DSC_9972 2 (1).png",
@@ -63,9 +64,12 @@ const courseHeader = document.querySelector('.course-header')
                       </span>
                       ${item.courseDuration}
                   </div>
+                  <a href="">
                   <button class="prog-cta w-100">
                       Register Now
                   </button>
+                                
+                    </a>
               </div>
           </div>
           `;

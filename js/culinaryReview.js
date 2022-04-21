@@ -96,6 +96,7 @@ studentView.forEach(item => {
     studentRow.appendChild(div)
 });
 const sectionCenter = document.querySelector(".section-center");
+const questions = document.querySelectorAll(".question");
 
 const questionAndAnswer = [
     {
@@ -144,7 +145,6 @@ questionAndAnswer.forEach(qAndA=>{
         `
         sectionCenter.appendChild(article)
     })
-    const questions = document.querySelectorAll(".question");
 questions.forEach(function (question) {
   const btn = question.querySelector(".question-btn");
   // console.log(btn);
