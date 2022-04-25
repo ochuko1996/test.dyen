@@ -117,7 +117,7 @@ nav{
     padding: 10px 30px;
 }
 .search-contain input::placeholder{
-    padding-left: 30px;
+    padding-left: 10px;
 }
 
 .hamburger,.cancel-btn,.nav-icons:hover{
@@ -482,6 +482,9 @@ nav{
     }
     .discover-programs{
         margin-bottom: 0;
+    }
+    .search-contain input::placeholder{
+        padding-left: 30px;
     }
 }
 /* md */
