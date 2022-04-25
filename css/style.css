@@ -568,6 +568,7 @@ nav{
         justify-content: space-between;
         transform: none;
         transition: none;
+        min-height: auto;
     }
     .transform{
         text-align: left;
@@ -871,11 +872,7 @@ nav{
 }
 /* xl */
 @media screen and (min-width: 1200px){
-    /* .search-contain input{
-        width: 538px;
-        height: 43px;
-    } */
-    
+   
 }
 /* xxl */
 @media screen and (min-width: 1400px){

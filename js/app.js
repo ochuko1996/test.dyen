@@ -1,40 +1,3 @@
-let hamburger = document.querySelector(".hamburger")
-const navLeft =  document.querySelector(".nav-left")
-const cancelBtn =  document.querySelector(".cancel-btn")
-
-hamburger.addEventListener('click', function(){
-    navLeft.classList.add('show-links')
-    hamburger.classList.add('d-none')
-} )
-cancelBtn.addEventListener('click', function(){
-    navLeft.classList.remove('show-links')
-    hamburger.classList.remove('d-none')
-})
-
-//search input js
-const inputSearch = document.getElementById('search')
-const searchIcon = document.querySelector(".search-icon")
-inputSearch.addEventListener('focus', function(){
-        searchIcon.classList.add('d-none')
-    })
-inputSearch.addEventListener('blur', function(){
-    searchIcon.classList.remove("d-none")
-        
-    })
-    //subscribe input js
-const subscribe = document.getElementById('subscribe')
-const subscribeBorder = document.querySelector(".sub-input")
-const subscribeBtn = document.querySelector(".subscribe-btn")
-const subscribeText = document.querySelector(".sub-text")
-// subscribe.addEventListener('focus', function(){
-//         subscribeBorder.style.borderColor = "#FFA800";
-//     })
-// subscribe.addEventListener('focus', function(){
-//     })
-    // subscribe.addEventListener('blur', function(){
-    //     subscribeBorder.style.borderColor = "#f8f8f8";
-        
-    // })
 
 // program js
 const programsDiv = document.querySelector('.programs')
@@ -69,22 +32,7 @@ const programsDiv = document.querySelector('.programs')
 // })
 
 
-const playBtn = document.getElementById('playBtn')
-const vid = document.querySelector('.vid')
-const overlay = document.querySelector('.overlay-play')
 
-playBtn.addEventListener('click',()=>{
-    vid.play()
-    if(vid.play()){
-        overlay.classList.add('d-none')
-        vid.setAttribute("controls", "controls")
-    }
-})
-
-vid.addEventListener('ended',(e)=>{
-    vid.removeAttribute("controls")
-    overlay.classList.remove('d-none')
-})
 
 // Curriculum
 const curriBtn = document.querySelectorAll(".btn-curriculum")
@@ -97,9 +45,3 @@ curriDesc.forEach(desc=>{
 let text = "Samosas, Spring Rolls, Puff Puff, Chin Chin, Buns, Shawarma, Egg rolls, Meat pie, Doughnut, Banana bread Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptatibus temporibus, doloremque officiis commodi quia illo perferendis obcaecati quae laudantium eos. Dolor minus exercitationem impedit aspernatur modi repudiandae ea nulla, voluptates quae ut eligendi vitae omnis! Odit fugit commodi necessitatibus temporibus veniam vel, cupiditate illo impedit dicta ducimus corporis reiciendis."
 let result = text.substring(0,200)
 console.log(result);
-
-const curriculums = [
-    {
-        
-    }
-]

@@ -126,6 +126,9 @@ const courseHeader = document.querySelector('.course-header')
 
   });
   filterBtns.forEach(function (btn) {
+    // if(btn.classList.contains("all")){
+    //   btn.classList.add('btn-active')
+    // }
     btn.addEventListener("focusin",function(e) {
       e.target.classList.add('btn-active')
     })
@@ -147,10 +150,7 @@ const courseHeader = document.querySelector('.course-header')
       } else {
         diplayMenuItems(menuCategory);
       }
-      // let current = document.getElementsByClassName('btn-active')
-      // current[0].className = current[0].className.replace(' btn-active')
-      // this.className += " btn-active";
-      // e.target.className.add('btn-active')
+    
       
       if(category === "tech"){
         courseHeader.textContent = courseHeading[1]
