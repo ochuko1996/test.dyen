@@ -118,6 +118,7 @@ nav{
 }
 .search-contain input::placeholder{
     padding-left: 0px;
+    /* font-size: var(--mobile-paragraph); */
 }
 
 .hamburger,.cancel-btn,.nav-icons:hover{
@@ -397,7 +398,7 @@ nav{
     border-radius: 20px;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, .6);
+    background: black;
 }
 .overlay-play img{
     cursor: pointer;
@@ -566,7 +567,7 @@ nav{
         display: flex;
         background-color: transparent;
         position: static;
-        height: fit-content;
+        min-height: fit-content;
         align-items: center;
         justify-content: space-between;
         transform: none;
