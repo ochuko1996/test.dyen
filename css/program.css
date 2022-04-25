@@ -84,6 +84,7 @@
 }
 .card-poster-container img{
     width: 100%;
+    min-height: 100%!important;
     border-radius: 10px;
 }
 /* .course-title{

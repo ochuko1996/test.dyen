@@ -571,7 +571,7 @@ nav{
         justify-content: space-between;
         transform: none;
         transition: none;
-        min-height: auto;
+        /* min-height: auto; */
     }
     .transform{
         text-align: left;
