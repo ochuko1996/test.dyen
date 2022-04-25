@@ -117,7 +117,7 @@ nav{
     padding: 10px 30px;
 }
 .search-contain input::placeholder{
-    padding-left: 10px;
+    padding-left: 0px;
 }
 
 .hamburger,.cancel-btn,.nav-icons:hover{
@@ -326,7 +326,7 @@ nav{
 .our-values-text h6,.our-vision-text h6,.help-text h6, .dyen-archivement-text h2, .our-vision-header h6{
     color: var(--yellow);
 }
-.our-values-text h3,.our-vision-text h3, .help-text h3{
+.our-values-text h3,.our-vision-text h3, .help-text h3,.our-vision-header h3{
     font-size: var(--header-3);
     font-weight: 700;
     line-height: 37.11px;
