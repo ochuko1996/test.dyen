@@ -76,7 +76,7 @@ const programs = [
         courseDuration: "Coming Soon",
         category: "media",
         cta: "Coming Soon",
-        cardState: true,
+        cardState: false,
          url:    "../"
     },
     {
@@ -173,25 +173,21 @@ const courseHeader = document.querySelector('.course-header')
 
 
   function diplayMenuItems(menuItems) {
-    // const cardPoster = document.querySelector(".card-poster-container")
-    
-    
     let displayMenu = menuItems.map(function (item) {
-      // console.log(item);
-  
+     
       return `
       <div class="col-12 col-md-6 col-lg-4 mb-5">
           <div class="prog-item">
             <div class="card-poster-container">
               <img class="img-fluid" src="${item.poster}" alt="">
             </div>
-              <h5 class="course-title">
+              <h5 class="${item.cardState ? 'course-title' : 'grey-text course-title'}">
                   ${item.courseTitle}
               </h5>
-              <p class="desc">
+              <p class="${item.cardState ? 'desc' : 'grey-text course-title'}">
                   ${item.courseDescription}
               </p>
-              <div class="course-duration d-flex align-items-center">
+              <div class="${item.cardState ? 'course-duration d-flex align-items-center' : 'grey-text course-duration d-flex align-items-center'} ">
                   <span class="course-duration-icon">
                       <img src="./assets/images/png/eva_clock-fill.png" alt="duration">
                   </span>
@@ -207,23 +203,8 @@ const courseHeader = document.querySelector('.course-header')
       `;
     });
     displayMenu = displayMenu.join("");
-    // console.log(displayMenu);
-    
     row.innerHTML = displayMenu;
   }
   
-  const cardTitle = document.querySelector(".course-title")
-  const desc = document.querySelector(".desc")
-  const duration = document.querySelector(".course-duration")
-  // const soon = programs.filter(function(soon){
-  //   // displayMenu(soon)
-  //   if (soon.cardState === false) {
-  //     // cardTitle.classList.add("grey-text")
-  //     //  desc.classList.add("grey-text")
-  //     //   duration.classList.add("grey-text")
-  //     console.log(cardTitle);
-  //     // displayMenu(soon)
-  //   }else{
-  //     console.log("hi");
-  //   }
-  // })
+ 
+  

@@ -72,7 +72,7 @@ studentView.forEach(item => {
             <p class="student-course">
                 ${item.course}
             </p>
-            <p class=" text-center">
+            <p class="student-paragaph text-center">
                 ${item.review}            
             </p>
             <div class="student-rating">

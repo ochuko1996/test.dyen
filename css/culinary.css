@@ -148,6 +148,10 @@
     /* margin-top: 57.53px !important; */
     margin-bottom: 57.53px !important;
 }
+.student-paragaph{
+    font-size: 12px !important;
+    margin-top: 10px;
+}
 .student-review-card{
     display: flex;
     flex-direction: column;
@@ -344,6 +348,10 @@
     .overview .overview-content:not(:last-child){
         margin-right: 77px;
     
+    }
+    .student-paragaph{
+        font-size: 14px !important;
+        margin-top: 10px;
     }
 }
 /* xl */

@@ -78,9 +78,6 @@ playBtn.addEventListener('click',()=>{
     if(vid.play()){
         overlay.classList.add('d-none')
         vid.setAttribute("controls", "controls")
-        
-        // console.log("hi");
-        // attributeFunc()
     }
 })
 
@@ -88,3 +85,21 @@ vid.addEventListener('ended',(e)=>{
     vid.removeAttribute("controls")
     overlay.classList.remove('d-none')
 })
+
+// Curriculum
+const curriBtn = document.querySelectorAll(".btn-curriculum")
+let curriDesc = document.querySelectorAll(".curriculum-desc")
+
+
+curriDesc.forEach(desc=>{
+    desc.substring(1,10)
+})
+let text = "Samosas, Spring Rolls, Puff Puff, Chin Chin, Buns, Shawarma, Egg rolls, Meat pie, Doughnut, Banana bread Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptatibus temporibus, doloremque officiis commodi quia illo perferendis obcaecati quae laudantium eos. Dolor minus exercitationem impedit aspernatur modi repudiandae ea nulla, voluptates quae ut eligendi vitae omnis! Odit fugit commodi necessitatibus temporibus veniam vel, cupiditate illo impedit dicta ducimus corporis reiciendis."
+let result = text.substring(0,200)
+console.log(result);
+
+const curriculums = [
+    {
+        
+    }
+]
