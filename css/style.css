@@ -325,6 +325,9 @@ nav{
 }
 /* discover-section ends */
 /* our values */
+.our-values{
+    margin-top: 100px;
+}
 .our-values>.container .row>div:first-child,.our-values{
     margin-bottom: 100px;
 }
@@ -476,14 +479,18 @@ nav{
     border: none;
     background-color: var(--yellow);
 }
- 
+.dyen-map-section{
+    flex-direction: column-reverse;
+}
 
 /* our help ends */
 
 #playBtn{
     cursor: pointer;
 }
-
+@media screen and (max-width: 991) {
+    
+}
 /* sm */
 @media screen and (min-width: 576px){
     .disc-mb{
@@ -531,6 +538,10 @@ nav{
     .program-menu:hover .fa-up{
         display: inline;
     }
+    .dyen-map-section{
+        flex-direction: row;
+    }
+    
     .nav-brand{width: auto;}
     .dropDown-parent{
         position: absolute;

@@ -11,7 +11,7 @@ const programs = [
     },
     {
       poster: "./assets/images/png/DSC_9972 2 (1).png",
-      courseTitle: "FULL STACK WEB DEV (MERN)",
+      courseTitle: "Full Stack Web Dev (MERN)",
       courseDescription: "A network focused on advancing and equipping ",
       courseDuration: "Duration: 6months",
       category: "tech",

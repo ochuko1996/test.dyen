@@ -36,5 +36,4 @@ subscribe.addEventListener('focus', function(){
         
     })
 
-import { btns } from "../app"
 
