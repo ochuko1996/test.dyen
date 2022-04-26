@@ -57,6 +57,7 @@ nav{
 .nav-header{
     display: flex;
     justify-content: space-between;
+    /* align-items: center; */
     /* background-color: #fff; */
 }
 .nav-center{ 
@@ -66,8 +67,10 @@ nav{
     margin: 10px 0;
     align-items: center;
 }
-.nav-left{
-    /* display: none; */
+.nav-links{
+    list-style: none;
+}
+.nav-links{
     position: absolute;
     top: 0;
     left:0;
@@ -79,6 +82,7 @@ nav{
     transition: var(--transition);
     overflow: hidden;
     z-index: 200;
+    margin: 0;
 }
 .search-contain{
     position: relative;
@@ -476,6 +480,7 @@ nav{
 #playBtn{
     cursor: pointer;
 }
+
 /* sm */
 @media screen and (min-width: 576px){
     .disc-mb{
@@ -497,6 +502,7 @@ nav{
         margin-bottom: 2rem;
     }
 }
+
 /* lg */
 @media screen and (min-width: 992px){
     /* nav-menu starts */
@@ -526,12 +532,9 @@ nav{
     .dropDown-parent{
         position: absolute;
         top: 0px;
-        /* border: 1px solid black; */
         height: fit-content;
-        /* transform: translateY(-140%); */
-        opacity: 0;
         transition: 1s;
-        z-index: -1000;
+        z-index: 1500;
         padding-top:40px !important;
         display: none;
     }
@@ -541,6 +544,7 @@ nav{
         /* transform: translateY(0%); */
         /* top: 32px; */
     }
+    
     .program-menu-items{
         min-height: 178px;
         width: 229px;
@@ -562,18 +566,21 @@ nav{
         margin-bottom:0px;
     }
     .item{padding: 0;}
-    .paragraph{font-size: 20px;}    
-    .nav-left{
+    .paragraph{font-size: 20px;} 
+    .program-menu{cursor: pointer;}   
+    .nav-links{
         display: flex;
         background-color: transparent;
-        position: static;
-        min-height: fit-content;
+        position: relative;
+        min-height: auto;
         align-items: center;
         justify-content: space-between;
         transform: none;
         transition: none;
-        /* min-height: auto; */
+        z-index: 0;
+
     }
+    
     .transform{
         text-align: left;
     }
@@ -584,7 +591,7 @@ nav{
         align-items: center;
         /* margin-left: 123px; */
     }
-    .nav-left{
+    .nav-links{
         padding: 0;
     }
     .nav-links .nav-item:not(:last-child){

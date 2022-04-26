@@ -125,18 +125,20 @@ const courseHeader = document.querySelector('.course-header')
     diplayMenuItems(programs);
 
   });
-  filterBtns.forEach(function (btn) {
-    // if(btn.classList.contains("all")){
-    //   btn.classList.add('btn-active')
-    // }
-    btn.addEventListener("focusin",function(e) {
+ filterBtns.forEach(function (btn) { 
+   
+    btn.addEventListener("focusin", function(e) {
+      filterBtns.forEach(function(btn) {
+        btn.classList.remove('btn-active')
+      })
+
       e.target.classList.add('btn-active')
     })
 
     btn.addEventListener("focusout",function(e) {
       e.target.classList.remove('btn-active')
     })
-
+    
     btn.addEventListener("click", function (e) {
       // console.log(e.currentTarget.dataset);
       const category = e.currentTarget.dataset.id;
@@ -167,6 +169,7 @@ const courseHeader = document.querySelector('.course-header')
         courseHeader.textContent = courseHeading[0]
       }
      
+     
     });
   });
  
@@ -194,7 +197,7 @@ const courseHeader = document.querySelector('.course-header')
                   ${item.courseDuration}
               </div>
               <a href="${item.url}">
-              <button class="prog-cta w-100">
+              <button class="prog-cta w-100" ${item.cardState ? "" : "disabled"} >
                   Register Now
               </button>
               </a>
@@ -207,4 +210,12 @@ const courseHeader = document.querySelector('.course-header')
   }
   
  
+  //redirect url
+  const techRoute = document.querySelector('.tech-route')
   
+  // techRoute.addEventListener('click',()=>{
+  //   window.location.replace('./program.html')
+  //   filterBtns.forEach(btn=>{
+      
+  //   })
+  // })

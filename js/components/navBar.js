@@ -1,5 +1,5 @@
 let hamburger = document.querySelector(".hamburger")
-const navLeft =  document.querySelector(".nav-left")
+const navLeft =  document.querySelector(".nav-links")
 const cancelBtn =  document.querySelector(".cancel-btn")
 
 hamburger.addEventListener('click', function(){
@@ -35,3 +35,6 @@ subscribe.addEventListener('focus', function(){
         subscribeBorder.style.borderColor = "#f8f8f8";
         
     })
+
+import { btns } from "../app"
+
