@@ -434,6 +434,9 @@ nav{
 .help-pad{
     padding: 0px 0 103px;
 }
+.web-guys{
+    border-radius: 35px;
+}
 .help-text{
     text-align: center;
     display: flex;
@@ -509,10 +512,10 @@ nav{
     .hamburger,
     .cancel-btn,
     .discover-heading span,
-    .nav-links .home, .fa-up{
+    .nav-links .home, .fa-up, .scholarship-value-mobile{
         display: none;
     }
-    .fa-down{
+    .fa-down,.scholarship-value-desktop{
         display: inline;
     }
     .program-menu:hover .fa-down{

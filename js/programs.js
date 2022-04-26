@@ -11,9 +11,9 @@ const programs = [
     },
     {
       poster: "./assets/images/png/DSC_9972 2 (1).png",
-      courseTitle: "Frontend Development",
+      courseTitle: "FULL STACK WEB DEV (MERN)",
       courseDescription: "A network focused on advancing and equipping ",
-      courseDuration: "Duration: 4months",
+      courseDuration: "Duration: 6months",
       category: "tech",
       cta: "register",
       cardState: true,
@@ -81,7 +81,7 @@ const programs = [
     },
     {
         poster: "./assets/images/png/DSC_9972 2 (1).png",
-        courseTitle: "UI/UX Design",
+        courseTitle: "Product Design (UI/UX) ",
         courseDescription: "A network focused on advancing and equipping",
         courseDuration: "Duration: 4months",
         category:   "tech",
@@ -91,7 +91,7 @@ const programs = [
     },
     {
         poster: "./assets/images/png/DSC_9972 2 (1).png",
-        courseTitle: "Backend Development",
+        courseTitle: "Wordpress Web Design",
         courseDescription: "A network focused on advancing and equipping",
         courseDuration: "Duration: 4months",
         category:   "tech",
@@ -102,9 +102,9 @@ const programs = [
     },
     {
         poster: "./assets/images/png/DSC_9972 2 (1).png",
-        courseTitle: "Mobile Development",
+        courseTitle: "Mobile App Development",
         courseDescription: "A network focused on advancing and equipping",
-        courseDuration: "Duration: 4months",
+        courseDuration: "Duration: 6months",
         category:   "tech",
         cta: "register",
         cardState: true,
